@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Juan y Laura</string>
+    <string-array name="novios_array">
+        <item>LOS NOVIOS</item>
+        <item>JUAN</item>
+        <item>LAURA</item>
+    </string-array>
 </resources>

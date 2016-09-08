@@ -10,75 +10,86 @@
     tools:context="sachonidas.myapplication.MainActivity">
 
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Apuntate el día"
-        android:id="@+id/textView"
+        android:id="@+id/tv1"
+        android:textSize="17dp"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-10.12.16-"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+        android:id="@+id/tv2"
+        android:textSize="17dp"
+        android:layout_below="@+id/tv1"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="***NOS CASAMOS***"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
+        android:id="@+id/tv3"
+        android:textSize="17dp"
+        android:layout_below="@+id/tv2"
         android:layout_centerHorizontal="true" />
 
-    <ImageButton
-        android:layout_width="170dp"
-        android:layout_height="200dp"
-        android:id="@+id/imgBtnNovio"
-        android:layout_marginTop="39dp"
-        android:nestedScrollingEnabled="false"
-        android:onClick="onClickNovio"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true"
-        android:textAlignment="center" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv3"
+        android:layout_alignEnd="@+id/tv3"
+        android:layout_alignStart="@+id/tv3">
 
-    <ImageButton
-        android:layout_width="170dp"
-        android:layout_height="200dp"
-        android:id="@+id/imgBtnNovia"
-        android:onClick="onClickNovia"
-        android:layout_alignTop="@+id/imgBtnNovio"
-        android:layout_alignParentEnd="true"
-        android:textAlignment="center" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BIENVENIDA"
+            android:id="@+id/btnBienvenida"
+            android:layout_row="0"
+            android:layout_column="1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="El novio"
-        android:id="@+id/textView4"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/textView3" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spLosNovios"
+            android:layout_row="1"
+            android:layout_column="1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="La novia"
-        android:id="@+id/textView5"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_alignEnd="@+id/imgBtnNovia" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp2InfoEvento"
+            android:layout_row="2"
+            android:layout_column="1" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/imgBtnNovio"
-        android:layout_toStartOf="@+id/textView4"
-        android:layout_marginTop="57dp"
-        android:onClick="onClickNovio" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR ASISTENCIA"
+            android:id="@+id/btnConfirmarAsistencia"
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GALERIA"
+            android:id="@+id/btnGaleria"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+    </GridLayout>
 
 
 </RelativeLayout>

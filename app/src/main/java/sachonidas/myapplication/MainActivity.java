@@ -1,5 +1,6 @@
 package sachonidas.myapplication;
 
+import android.graphics.Typeface;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,14 +8,27 @@ import android.support.v7.widget.ButtonBarLayout;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton imagenNovio, imagenNovia;
     private Button btn;
+    private TextView tv1, tv2, tv3;
+    int senanasRestar = 14;
+    int diasRestar = 10;
+    int horasRestar = 12;
+    int minutosRestar = 0;
+    int segundosRestar = 0;
+    Spinner sp1, sp2;
 
 
     @Override
@@ -22,14 +36,55 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imagenNovio = (ImageButton)findViewById(R.id.imgBtnNovio);
-        imagenNovia = (ImageButton)findViewById(R.id.imgBtnNovia);
+        Calendar c = Calendar.getInstance();
+        long ahora = System.currentTimeMillis();
+        Date d = new Date(ahora);
+
+        c.setTimeInMillis(ahora);
+        int horas = c.get(Calendar.HOUR);
+        int minutos = c.get(Calendar.MINUTE);
+        int segundos = c.get(Calendar.SECOND);
+        int semanas = c.get(Calendar.WEEK_OF_MONTH);
+        int dias = c.get(Calendar.DAY_OF_MONTH);
+
+        String horasString = String.valueOf(horas);
+        String minutosString = String.valueOf(minutos);
+        String segundosString = String.valueOf(segundos);
+        String semanasString = String.valueOf(semanas);
+        String diasString = String.valueOf(dias);
+
+        Log.e("Horas", horasString);
+        Log.e("Minutos", minutosString);
+        Log.e("Segundos", segundosString);
+        Log.e("Dias", diasString);
+        Log.e("Semanas", semanasString);
 
 
-        imagenNovio.setImageResource(R.drawable.novio);
-        imagenNovia.setImageResource(R.drawable.novia);
 
-        btn = (Button)findViewById(R.id.button);
+        Typeface face= Typeface.createFromAsset(getAssets(),"fonts/Pacifico.ttf");
+
+        tv1 = (TextView)findViewById(R.id.tv1);
+        tv2 = (TextView)findViewById(R.id.tv2);
+        tv3 = (TextView)findViewById(R.id.tv3);
+
+        tv1.setTypeface(face);
+        tv2.setTypeface(face);
+        tv3.setTypeface(face);
+
+
+        //imagenNovio = (ImageButton)findViewById(R.id.imgBtnNovio);
+        //imagenNovia = (ImageButton)findViewById(R.id.imgBtnNovia);
+
+        //imagenNovio.setImageResource(R.drawable.novio);
+        //imagenNovia.setImageResource(R.drawable.novia);
+
+        sp1 = (Spinner)findViewById(R.id.spLosNovios);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.novios_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp1.setAdapter(adapter);
+
+        sp2 = (Spinner)findViewById(R.id.sp2InfoEvento);
 
     }
 
@@ -40,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
      public void onClickNovia(View view){
-         Toast.makeText(MainActivity.this, "Has clicado en el noviass.",
+         Toast.makeText(MainActivity.this, "Has clicado en el novia.",
                  Toast.LENGTH_SHORT).show();
     }
 
