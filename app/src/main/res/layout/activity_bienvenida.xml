@@ -41,4 +41,16 @@
         android:layout_marginTop="46dp"
         android:textSize="20dp"
         android:textAlignment="center" />
+
+    <ImageButton
+        android:layout_width="110px"
+        android:layout_height="110px"
+        android:id="@+id/imageButton"
+        android:onClick="lanzaInicio"
+        android:maxWidth="20dp"
+        android:minHeight="20dp"
+        android:minWidth="20dp"
+        android:maxHeight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

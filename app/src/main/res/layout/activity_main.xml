@@ -57,17 +57,18 @@
             android:text="BIENVENIDA"
             android:id="@+id/btnBienvenida"
             android:layout_row="0"
-            android:layout_column="1" />
+            android:layout_column="1"
+            android:onClick="lanzaBienvenida" />
 
         <Spinner
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spLosNovios"
             android:layout_row="1"
             android:layout_column="1" />
 
         <Spinner
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/sp2InfoEvento"
             android:layout_row="2"

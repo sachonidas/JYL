@@ -1,5 +1,6 @@
 package sachonidas.myapplication;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
@@ -86,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
 
         sp2 = (Spinner)findViewById(R.id.sp2InfoEvento);
 
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
+                R.array.evento_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sp2.setAdapter(adapter2);
     }
 
     public void onClickNovio(View view){
@@ -97,6 +102,11 @@ public class MainActivity extends AppCompatActivity {
      public void onClickNovia(View view){
          Toast.makeText(MainActivity.this, "Has clicado en el novia.",
                  Toast.LENGTH_SHORT).show();
+    }
+
+    public void lanzaBienvenida(View view){
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
     }
 
 }
