@@ -1,5 +1,6 @@
 package sachonidas.myapplication;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.media.Image;
@@ -9,9 +10,13 @@ import android.support.v7.widget.ButtonBarLayout;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
     int minutosRestar = 0;
     int segundosRestar = 0;
     Spinner sp1, sp2;
-
+    private String sp1Opcion, sp2Opcion;
+    String novios[] = {"LOS NOVIOS", "JUAN", "LAURA"};
+    ExpandableListAdapter mAdapter;
+    ExpandableListView expandableListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         tv3.setTypeface(face);
 
 
+
         //imagenNovio = (ImageButton)findViewById(R.id.imgBtnNovio);
         //imagenNovia = (ImageButton)findViewById(R.id.imgBtnNovia);
 
@@ -91,7 +100,33 @@ public class MainActivity extends AppCompatActivity {
                 R.array.evento_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sp2.setAdapter(adapter2);
+
+        sp1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                sp1Opcion = parent.getItemAtPosition(position).toString();
+                Log.e("Opcion", "juan");
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        String select = sp1.getSelectedItem().toString();
+        if(select == "JUAN"){
+            Intent intent = new Intent(MainActivity.this, MainActivityJuan.class);
+            startActivity(intent);
+        }
+
+        expandableListView = (ExpandableListView)findViewById(R.id.expL);
+        expandableListView.setAdapter(mAdapter);
+
+
+
     }
+
+
 
     public void onClickNovio(View view){
         Toast.makeText(MainActivity.this, "Has clicado en el novio.",

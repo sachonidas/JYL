@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sachonidas.myapplication.MainActivityJuan">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/imgJuan"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="JUAN"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imgJuan"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Soy Juan y los que me conocéis bien sabéis que soy parco en palabras…palabras escritas que no dichas claro 😛  Menos mal que tengo a Laura para ayudarme en ésta tarea. Hemos llegado a un acuerdo, yo me encargo de la estructura web y ella del contenido. Pero claro ahora me toca decir algo y bueno…umm, no sé…"
+                android:id="@+id/textView5"
+                android:layout_alignTop="@+id/scrollView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Me he enamorado de Alicante, de su clima, de su calidad de vida, de su gente tan agradable y por supuesto de la Alicantina más guapa y cariñosa. Ahora no me cambio de sitio ni loco. Llegué aquí hace ya casi dos años por trabajo y estoy viviendo un momento muy especial junto a una persona muy especial. Ya la conoceréis quienes no tengáis el placer. Es un verdadero encanto.
+
+    Echo de menos a mi gente, a mi familia y en ciertos momentos también mi tierra. Para mí es muy importante que el día de la boda me sienta un poco como en casa. Mis amigos son unos cabritos porque les he dicho que no quiero despedida pero me andan acojonando. No sé que pasará al final…aún así también me acuerdo mucho de los ratos tan buenos que pasamos juntos."
+                android:id="@+id/textView6"
+                android:layout_alignTop="@+id/scrollView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Aquí en Alicante también he hecho grandes amistades y cada día siento que ésta es también mi ciudad. La familia de Laura es estupenda y les estoy muy agradecidos por lo bien que me tratan y lo rápido que me han acogido.
+
+    Profesionalmente estoy en un momento muy interesante y espero que dure mucho tiempo aunque sólo me falta aprender los más de 5 idiomas diferentes que se hablan en la clínica…claro que yo también les hablo de html, javascript, jquery y me quedo tan tranquilo 😉 shhh faltaría más, a ver si les suelto alguna en castúo y ya lo flipan."
+                android:id="@+id/textView7"
+                android:layout_alignTop="@+id/scrollView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="En fin que ya llevo demasiado escrito para lo que acostumbro.
+
+    Pues eso, que tengo muchas ganas de veros a todos el 10 de diciembre para hacer de todo menos bailar!!!
+
+    Juan"
+                android:id="@+id/textView8"
+                android:layout_alignTop="@+id/scrollView2"
+                android:layout_centerHorizontal="true" />
+
+        </FrameLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

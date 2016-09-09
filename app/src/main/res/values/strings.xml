@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Juan y Laura</string>
+    <string name="juanSolo">JUAN</string>
+    <string name="lauraSolo">LAURA</string>
     <string-array name="novios_array">
         <item>LOS NOVIOS</item>
         <item>JUAN</item>
