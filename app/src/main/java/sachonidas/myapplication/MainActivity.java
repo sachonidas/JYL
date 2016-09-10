@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Calendar c = Calendar.getInstance();
+        /*Calendar c = Calendar.getInstance();
         long ahora = System.currentTimeMillis();
         Date d = new Date(ahora);
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e("Minutos", minutosString);
         Log.e("Segundos", segundosString);
         Log.e("Dias", diasString);
-        Log.e("Semanas", semanasString);
+        Log.e("Semanas", semanasString);*/
 
 
 
