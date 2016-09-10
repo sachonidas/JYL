@@ -101,11 +101,24 @@ public class MainActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sp2.setAdapter(adapter2);
 
+
         sp1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 sp1Opcion = parent.getItemAtPosition(position).toString();
                 Log.e("Opcion", "juan");
+                if(sp1Opcion == "JUAN"){
+
+                }
+
+                switch (position){
+                    case 1: Intent intentJuan = new Intent(MainActivity.this, MainActivityJuan.class);
+                        startActivity(intentJuan);
+                        break;
+                    case 2: Intent intentLaura = new Intent(MainActivity.this, MainActivityLaura.class);
+                        startActivity(intentLaura);
+                        break;
+                }
             }
 
             @Override
@@ -113,11 +126,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        String select = sp1.getSelectedItem().toString();
-        if(select == "JUAN"){
-            Intent intent = new Intent(MainActivity.this, MainActivityJuan.class);
-            startActivity(intent);
-        }
 
         expandableListView = (ExpandableListView)findViewById(R.id.expL);
         expandableListView.setAdapter(mAdapter);
@@ -126,6 +134,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onClickSpinner(View view){
+        String select = sp1.getSelectedItem().toString();
+        if(select == "JUAN"){
+            Intent intent = new Intent(MainActivity.this, MainActivityJuan.class);
+            startActivity(intent);
+        }
+
+    }
 
 
     public void onClickNovio(View view){

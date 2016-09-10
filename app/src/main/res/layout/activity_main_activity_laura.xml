@@ -7,8 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="sachonidas.myapplication.MainActivityJuan">
-
+    tools:context="sachonidas.myapplication.MainActivityLaura">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200px"
@@ -19,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="JUAN"
+        android:text="LAURA"
         android:id="@+id/textView4"
         android:layout_below="@+id/imgLaura"
         android:layout_centerHorizontal="true" />
@@ -40,55 +39,62 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Soy Juan y los que me conocéis bien sabéis que soy parco en palabras…palabras escritas que no dichas claro 😛  Menos mal que tengo a Laura para ayudarme en ésta tarea. Hemos llegado a un acuerdo, yo me encargo de la estructura web y ella del contenido. Pero claro ahora me toca decir algo y bueno…umm, no sé…"
                 android:id="@+id/textView5"
                 android:layout_alignTop="@+id/scrollView2"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:text="Si me dicen hace dos años que me caso ni me lo creo, pero es cierto que la vida da muchas vueltas y si la vivimos con ilusión, esperanza y con paciencia, siempre nos recompensa." />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Me he enamorado de Alicante, de su clima, de su calidad de vida, de su gente tan agradable y por supuesto de la Alicantina más guapa y cariñosa. Ahora no me cambio de sitio ni loco. Llegué aquí hace ya casi dos años por trabajo y estoy viviendo un momento muy especial junto a una persona muy especial. Ya la conoceréis quienes no tengáis el placer. Es un verdadero encanto."
                 android:id="@+id/textView6"
                 android:layout_alignBottom="@+id/scrollView2"
                 android:layout_alignParentStart="true"
-                android:layout_marginBottom="43dp" />
+                android:layout_marginBottom="43dp"
+                android:text="Los que me conocéis os extrañará esto de que me case, pero también es cierto que de pequeña quería ser monja. A lo que me refiero es que no se valora lo que implica el matrimonio hasta que se conoce a la persona adecuada. Y en mi idea de pasar una vida con otra persona han contribuido mis padres y mi hermano, a los que quiero mucho. Gracias por vuestro apoyo incondicional en mis decisiones sentimentales. Eso da mucha confianza y ayuda a enfrentarse al futuro con optimismo." />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Echo de menos a mi gente, a mi familia y en ciertos momentos también mi tierra. Para mí es muy importante que el día de la boda me sienta un poco como en casa. Mis amigos son unos cabritos porque les he dicho que no quiero despedida pero me andan acojonando. No sé que pasará al final…aún así también me acuerdo mucho de los ratos tan buenos que pasamos juntos."
-                android:id="@+id/textView7" />
+                android:id="@+id/textView7"
+                android:text="Cuando conocí a Juan y supe que no era de Alicante crucé los dedos entusiasmada pensando de dónde podía venir. Entonces jugamos a las adivinanzas y me dijo que en su tierra hubo una capital de provincia romana. Reconozco que no acerté ni a la primera, ni a la segunda, ni a la tercera, pero me despertó ganas de aprender (o de recordar lo aprendido) y eso me encantó." />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Aquí en Alicante también he hecho grandes amistades y cada día siento que ésta es también mi ciudad. La familia de Laura es estupenda y les estoy muy agradecidos por lo bien que me tratan y lo rápido que me han acogido."
-                android:id="@+id/textView8" />
+                android:id="@+id/textView8"
+                android:text="Después de conocer Miajadas y a una pequeñita pero encantadora parte de su familia, me siento una verdadera privilegiada por estar cerca de gente tan acogedora y cariñosa. También estoy muy feliz por haber establecido un vínculo con esa preciosa tierra extremeña de la que todavía me quedan rincones por descubrir y donde curiosamente también vivieron mis abuelos paternos, Aurelia y Pedro y donde nacieron mi tía Sisi y mi tío Pedro.  " />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Profesionalmente estoy en un momento muy interesante y espero que dure mucho tiempo aunque sólo me falta aprender los más de 5 idiomas diferentes que se hablan en la clínica…claro que yo también les hablo de html, javascript, jquery y me quedo tan tranquilo 😉 shhh faltaría más, a ver si les suelto alguna en castúo y ya lo flipan."
-                android:id="@+id/textView9" />
+                android:id="@+id/textView9"
+                android:text="La persona adecuada para mi ya ha llegado y se llama Juan, el chico que me despierta a besos todas las mañanas y con el que acabo el día leyendo en la cama. Es un poco tímido pero con un gran corazón, muy simpático y con un concepto de pareja difícil de encontrar hoy en día." />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="En fin que ya llevo demasiado escrito para lo que acostumbro.  Pues eso, que tengo muchas ganas de veros a todos el 10 de diciembre para hacer de todo menos bailar!!! "
-                android:id="@+id/textView10" />
+                android:id="@+id/textView10"
+                android:text="No se si confiáis en el destino, pero yo todavía os puedo contar mucho más de él." />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text=" Juan "
+                android:text="Gracias Juan"
                 android:id="@+id/textView11" />
+
+            <VideoView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/videoView"
+                android:onClick="videoStart" />
+
             <ImageButton
                 android:layout_width="110px"
                 android:layout_height="110px"
@@ -107,7 +113,4 @@
 
 
     </ScrollView>
-
-
-
 </RelativeLayout>
