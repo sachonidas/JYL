@@ -16,93 +16,105 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:textAlignment="center">
-
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Ayuntamiento de Alicante"
-            android:id="@+id/textView12" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Plaza del Ayuntamiento, número 1"
-            android:id="@+id/textView13"
-            android:layout_marginTop="46dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="La ceremonia civil será en el Salón Azul del Ayuntamiento de Alicante a las 12 de la mañana del 10 de diciembre. No se puede aparcar en la propia plaza del ayuntamiento, pero hay parkings cercanos."
-            android:id="@+id/textView14"
-            android:layout_below="@+id/textView13"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="50dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Ayuntamiento de Alicante"
+                android:id="@+id/textView12" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Plaza del Ayuntamiento, número 1"
+                android:id="@+id/textView13"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Los encontraréis en el mapa que os dejamos más abajo en ésta misma página."
-            android:id="@+id/textView15"
-            android:layout_below="@+id/textView14"
-            android:layout_toEndOf="@+id/imgAyuntamiento" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="La ceremonia civil será en el Salón Azul del Ayuntamiento de Alicante a las 12 de la mañana del 10 de diciembre. No se puede aparcar en la propia plaza del ayuntamiento, pero hay parkings cercanos."
+                android:id="@+id/textView14"
+                android:layout_below="@+id/textView13"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imgAyuntamiento"
-            android:layout_below="@+id/textView15"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Los encontraréis en el mapa que os dejamos más abajo en ésta misma página."
+                android:id="@+id/textView15"
+                android:layout_below="@+id/textView14"
+                android:layout_toEndOf="@+id/imgAyuntamiento"
+                android:layout_marginBottom="10dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="El Restaurante  "
-            android:id="@+id/textView16"
-            android:layout_below="@+id/imgAyuntamiento"
-            android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgAyuntamiento"
+                android:layout_below="@+id/textView15"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Parque de La Ereta, s/n, 03001 Alicante  "
-            android:id="@+id/textView17"
-            android:layout_below="@+id/textView16"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="El Restaurante  "
+                android:id="@+id/textView16"
+                android:layout_below="@+id/imgAyuntamiento"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="El banquete tendrá lugar en el Restaurante La Ereta que se halla ubicado en el mismo parque de la Ereta, a las faldas del castillo Santa Bárbara. Se puede acceder tanto a pie, desde el barrio de Santa Cruz y desde el parque de la Ereta, como en coche por la misma carretera que sube al castillo. Hay parking gratuito disponible . El cocktel dará comienzo a las 13 horas."
-            android:id="@+id/textView18"
-            android:layout_below="@+id/textView17"
-            android:layout_toEndOf="@+id/imgAyuntamiento" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Parque de La Ereta, s/n, 03001 Alicante  "
+                android:id="@+id/textView17"
+                android:layout_below="@+id/textView16"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imgEreta" />
-        <ImageButton
-            android:layout_width="110px"
-            android:layout_height="110px"
-            android:id="@+id/imageButton"
-            android:onClick="lanzaInicio"
-            android:maxWidth="20dp"
-            android:minHeight="20dp"
-            android:minWidth="20dp"
-            android:maxHeight="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="El banquete tendrá lugar en el Restaurante La Ereta que se halla ubicado en el mismo parque de la Ereta, a las faldas del castillo Santa Bárbara. Se puede acceder tanto a pie, desde el barrio de Santa Cruz y desde el parque de la Ereta, como en coche por la misma carretera que sube al castillo. Hay parking gratuito disponible . El cocktel dará comienzo a las 13 horas."
+                android:id="@+id/textView18"
+                android:layout_below="@+id/textView17"
+                android:layout_toEndOf="@+id/imgAyuntamiento"
+                android:layout_marginBottom="10dp" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgEreta"
+                android:layout_marginBottom="10dp" />
+            <ImageButton
+                android:layout_width="110px"
+                android:layout_height="110px"
+                android:id="@+id/imageButton"
+                android:onClick="lanzaInicio"
+                android:maxWidth="20dp"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                android:maxHeight="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
     </ScrollView>
+
 
 
 </RelativeLayout>

@@ -45,31 +45,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*Calendar c = Calendar.getInstance();
-        long ahora = System.currentTimeMillis();
-        Date d = new Date(ahora);
-
-        c.setTimeInMillis(ahora);
-        int horas = c.get(Calendar.HOUR);
-        int minutos = c.get(Calendar.MINUTE);
-        int segundos = c.get(Calendar.SECOND);
-        int semanas = c.get(Calendar.WEEK_OF_MONTH);
-        int dias = c.get(Calendar.DAY_OF_MONTH);
-
-        String horasString = String.valueOf(horas);
-        String minutosString = String.valueOf(minutos);
-        String segundosString = String.valueOf(segundos);
-        String semanasString = String.valueOf(semanas);
-        String diasString = String.valueOf(dias);
-
-        Log.e("Horas", horasString);
-        Log.e("Minutos", minutosString);
-        Log.e("Segundos", segundosString);
-        Log.e("Dias", diasString);
-        Log.e("Semanas", semanasString);*/
-
-
-
         Typeface face= Typeface.createFromAsset(getAssets(),"fonts/Pacifico.ttf");
 
         tv1 = (TextView)findViewById(R.id.tv1);
@@ -80,13 +55,6 @@ public class MainActivity extends AppCompatActivity {
         tv2.setTypeface(face);
         tv3.setTypeface(face);
 
-
-
-        //imagenNovio = (ImageButton)findViewById(R.id.imgBtnNovio);
-        //imagenNovia = (ImageButton)findViewById(R.id.imgBtnNovia);
-
-        //imagenNovio.setImageResource(R.drawable.novio);
-        //imagenNovia.setImageResource(R.drawable.novia);
 
         sp1 = (Spinner)findViewById(R.id.spLosNovios);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -133,8 +101,11 @@ public class MainActivity extends AppCompatActivity {
                     case 1: Intent intentLocalizacion = new Intent(MainActivity.this, MainActivityLocalizacion.class);
                         startActivity(intentLocalizacion);
                         break;
-                    case 2: Intent intentLaura = new Intent(MainActivity.this, MainActivityLaura.class);
+                    case 2: Intent intentLaura = new Intent(MainActivity.this, MainActivityLibro.class);
                         startActivity(intentLaura);
+                        break;
+                    case 3: Intent intentAlojamiento = new Intent(MainActivity.this, MainActivityLibro.class);
+                        startActivity(intentAlojamiento);
                         break;
                 }
             }
@@ -144,11 +115,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        expandableListView = (ExpandableListView)findViewById(R.id.expL);
-        expandableListView.setAdapter(mAdapter);
-
-
 
     }
 
