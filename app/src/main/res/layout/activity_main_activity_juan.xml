@@ -100,7 +100,8 @@
                 android:maxHeight="20dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:layout_gravity="bottom" />
 
 
         </LinearLayout>

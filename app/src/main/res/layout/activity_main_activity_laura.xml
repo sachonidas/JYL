@@ -89,12 +89,6 @@
                 android:text="Gracias Juan"
                 android:id="@+id/textView11" />
 
-            <VideoView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/videoView"
-                android:onClick="videoStart" />
-
             <ImageButton
                 android:layout_width="110px"
                 android:layout_height="110px"
@@ -118,5 +112,6 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imgFinal" />
+        android:id="@+id/imgFinal"
+        android:layout_below="@id/scrollView2"/>
 </RelativeLayout>

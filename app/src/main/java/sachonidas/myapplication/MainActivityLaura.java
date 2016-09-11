@@ -14,7 +14,6 @@ public class MainActivityLaura extends AppCompatActivity {
 
     private ImageView imgLaura,imgFinal;
     private ImageButton btnVolver;
-    private VideoView videoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +30,6 @@ public class MainActivityLaura extends AppCompatActivity {
 
         btnVolver.setImageResource(R.drawable.homeicon);
 
-        videoView = (VideoView)findViewById(R.id.videoView);
-
-        videoView.setVideoURI(Uri.parse("https://youtu.be/98XkPHcmCv0"));
 
 
     }
@@ -42,9 +38,4 @@ public class MainActivityLaura extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void videoStart(View view){
-        videoView.setMediaController(new MediaController(this));
-
-        videoView.start();
-    }
 }
