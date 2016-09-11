@@ -9,4 +9,171 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="sachonidas.myapplication.MainActivityAsistencia">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Confirmación de Asistencia"
+                android:id="@+id/textView33"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="¿Nos acompañaréis en nuestro día?"
+                android:id="@+id/textView34"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Cuando llegó el momento de pensar en los invitados tuvimos claro que lo celebraríamos con familiares y amigos íntimos. Es difícil tener que cerrar una lista de invitados pero al final escogimos aquellas personas que han estado en momentos clave de nuestras vidas."
+                android:id="@+id/textView35"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Estamos deseando que llegue el 10 de diciembre para seguir disfrutando de nuevos momentos, y éste con especial interés porque no nos casamos todos los días."
+                android:id="@+id/textView36"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pese a todo ésto, entendemos perfectamente que pueden haber inconvenientes o circunstancias personales que os impidan venir a nuestra boda. Si ésto sucede, que sepáis que os echaremos mucho en falta pero buscaremos un hueco para reunirnos y celebrarlo en otro momento porque…"
+                android:id="@+id/textView37"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="¡Cualquier excusa es buena para juntarse! 🙂"
+                android:id="@+id/textView38"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="*Nombres"
+                android:id="@+id/textView39" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNombres" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="*Email"
+                android:id="@+id/textView40" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etEmail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="*¿Asistiréis?"
+                android:id="@+id/textView41" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aceptamos Encantados"
+                android:id="@+id/tglBtnAcpetar"
+                android:checked="true" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rechazamos con Pesar"
+                android:id="@+id/tglBtnRechazar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="*Numero total de asistentes"
+                android:id="@+id/textView42" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/tglBtn1"
+                    android:textAlignment="center" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/tglBtn2"
+                    android:textAlignment="center" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/tglBtn3"
+                    android:checked="false"
+                    android:textAlignment="center" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/tglBtn4"
+                    android:textAlignment="center" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="*Comentarios"
+                android:id="@+id/textView43" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/etComentarios" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:id="@+id/btnEnviar" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
