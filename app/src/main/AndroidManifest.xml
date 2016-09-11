@@ -25,7 +25,8 @@
             android:name=".MainActivityLaura"
             android:label="Laura" />
         <activity android:name=".MainActivityLocalizacion" />
-        <activity android:name=".MainActivityLibro"></activity>
+        <activity android:name=".MainActivityLibro" />
+        <activity android:name=".MainActivityAlojamiento"></activity>
     </application>
 
 </manifest>
