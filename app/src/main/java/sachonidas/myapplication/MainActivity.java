@@ -126,6 +126,24 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        sp2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 1: Intent intentLocalizacion = new Intent(MainActivity.this, MainActivityLocalizacion.class);
+                        startActivity(intentLocalizacion);
+                        break;
+                    case 2: Intent intentLaura = new Intent(MainActivity.this, MainActivityLaura.class);
+                        startActivity(intentLaura);
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         expandableListView = (ExpandableListView)findViewById(R.id.expL);
         expandableListView.setAdapter(mAdapter);
