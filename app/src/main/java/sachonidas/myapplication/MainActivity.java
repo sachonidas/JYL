@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     case 2: Intent intentLaura = new Intent(MainActivity.this, MainActivityLibro.class);
                         startActivity(intentLaura);
                         break;
-                    case 3: Intent intentAlojamiento = new Intent(MainActivity.this, MainActivityLibro.class);
+                    case 3: Intent intentAlojamiento = new Intent(MainActivity.this, MainActivityAlojamiento.class);
                         startActivity(intentAlojamiento);
                         break;
                 }

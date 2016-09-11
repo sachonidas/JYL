@@ -9,4 +9,106 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="sachonidas.myapplication.MainActivityAlojamiento">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ALOJAMIENTO Y TURISMO EN ALICANTE"
+                android:id="@+id/textView26"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="HOTEL MAYA"
+                android:id="@+id/textView27"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="El hotel Maya es uno de los más cercanos al Restaurante La Ereta y disponen de precios especiales cuando se hacen reservas para grupos. En cuánto tengáis claro los días que vais a venir, sería conveniente que nos aviséis para reservar las habitaciones. Recordad que es el puente de diciembre y los hoteles en Alicante se suelen llenar."
+                android:id="@+id/textView28" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgMaya"
+                android:layout_below="@+id/scrollView5"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="HOTEL EUROSTARS LUCENTUM"
+                android:id="@+id/textView29"
+                android:layout_below="@+id/scrollView5"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Otro de los hoteles cercanos al restaurante y ayuntamiento es el Eurostars Lucentum, algo más caro pero mejor ubicado. Se encuentra frente al mercado central, a las espaldas del teatro principal y a 3 minutos de la zona de copas."
+                android:id="@+id/textView30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgLucentum"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Turismo en Alicante"
+                android:id="@+id/textView31"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="En éste enlace encontraréis toda la información sobre el turismo en Alicante. Cualquier curiosidad, no dudéis en preguntarnos!  Pincha sobre la foto"
+                android:id="@+id/textView32" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgTurismo" />
+
+            <ImageButton
+                android:layout_width="110px"
+                android:layout_height="110px"
+                android:id="@+id/imageButton"
+                android:onClick="lanzaInicio"
+                android:maxWidth="20dp"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                android:maxHeight="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_gravity="bottom" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>
