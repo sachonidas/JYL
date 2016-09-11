@@ -80,7 +80,8 @@
             android:text="CONFIRMAR ASISTENCIA"
             android:id="@+id/btnConfirmarAsistencia"
             android:layout_row="3"
-            android:layout_column="1" />
+            android:layout_column="1"
+            android:onClick="lanzaAsistencia" />
 
         <Button
             android:layout_width="match_parent"
@@ -88,7 +89,8 @@
             android:text="GALERIA"
             android:id="@+id/btnGaleria"
             android:layout_row="4"
-            android:layout_column="1" />
+            android:layout_column="1"
+            android:onClick="lanzaGaleria" />
 
     </GridLayout>
 

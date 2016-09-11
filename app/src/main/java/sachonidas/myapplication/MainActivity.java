@@ -144,4 +144,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void lanzaAsistencia(View view){
+        Intent intent = new Intent(this, MainActivityAsistencia.class);
+        startActivity(intent);
+    }
+
+    public void lanzaGaleria(View view){
+        Intent intent = new Intent(this, MainActivityGaleria.class);
+        startActivity(intent);
+    }
+
+
 }
