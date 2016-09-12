@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 
@@ -21,6 +22,10 @@ public class MainActivityLocalizacion extends AppCompatActivity {
 
         imgAyuntamiento.setImageResource(R.drawable.hallazul);
         imgEreta.setImageResource(R.drawable.eretaweb);
+
+        ImageButton btnVolver = (ImageButton) findViewById(R.id.imageButton);
+
+        btnVolver.setImageResource(R.drawable.homeicon);
     }
 
     public void lanzaInicio(View view){
