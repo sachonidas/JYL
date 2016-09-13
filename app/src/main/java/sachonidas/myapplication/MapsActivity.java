@@ -39,8 +39,43 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng alicante = new LatLng(38.346, -.4907);
+        mMap.addMarker(new MarkerOptions().position(alicante).title("Alicante"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(alicante));
+
+        LatLng parkingPuerto = new LatLng(38.3427, -0.479308);
+        mMap.addMarker(new MarkerOptions().position(parkingPuerto).title("Parking Puerto"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(parkingPuerto));
+
+        LatLng paradaTaxi = new LatLng(38.344561, -0.480248);
+        mMap.addMarker(new MarkerOptions().position(paradaTaxi).title("Parada Taxi"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(paradaTaxi));
+
+        LatLng ayuntamiento = new LatLng(38.34510201253228, -0.4811789095401764);
+        mMap.addMarker(new MarkerOptions().position(ayuntamiento).title("Ayuntamiento"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(ayuntamiento));
+
+        LatLng turismo = new LatLng(38.346833275229635, -0.48459604382514954);
+        mMap.addMarker(new MarkerOptions().position(turismo).title("Oficina de Turismo"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(turismo));
+
+        LatLng hotelLucentum = new LatLng(38.34751272668177, -0.4862375557422638);
+        mMap.addMarker(new MarkerOptions().position(hotelLucentum).title("Hotel Lucentum"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(hotelLucentum));
+
+        LatLng hotelMaya = new LatLng(38.3521045, -0.4745212000000265);
+        mMap.addMarker(new MarkerOptions().position(hotelMaya).title("Hotel Maya"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(hotelMaya));
+
+        LatLng ereta = new LatLng(38.348365 , -0.481659);
+        mMap.addMarker(new MarkerOptions().position(ereta).title("Restaurante La Ereta"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(ereta));
+
+
+
+
+
+
+
     }
 }
