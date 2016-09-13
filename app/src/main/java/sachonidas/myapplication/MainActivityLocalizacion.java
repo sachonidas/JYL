@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -11,6 +12,7 @@ import android.widget.ImageView;
 public class MainActivityLocalizacion extends AppCompatActivity {
 
     private ImageView imgAyuntamiento, imgEreta;
+    private Button btnMapa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,8 @@ public class MainActivityLocalizacion extends AppCompatActivity {
 
         imgAyuntamiento = (ImageView)findViewById(R.id.imgAyuntamiento);
         imgEreta = (ImageView)findViewById(R.id.imgEreta);
+
+        btnMapa = (Button)findViewById(R.id.btnMapa);
 
         imgAyuntamiento.setImageResource(R.drawable.hallazul);
         imgEreta.setImageResource(R.drawable.eretaweb);
@@ -32,6 +36,11 @@ public class MainActivityLocalizacion extends AppCompatActivity {
 
     public void lanzaInicio(View view){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void lanzaMapa(View view){
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
 }
