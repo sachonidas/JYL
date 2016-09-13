@@ -18,10 +18,8 @@ public class MainActivityLibro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity_libro);
 
-        imgQuijote = (ImageView)findViewById(R.id.imgQuijote);
         imgManos = (ImageView)findViewById(R.id.imgManos);
 
-        imgQuijote.setImageResource(R.drawable.quijotedoble);
         imgManos.setImageResource(R.drawable.slide);
 
         ImageButton btnVolver = (ImageButton) findViewById(R.id.imageButton);
