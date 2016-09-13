@@ -16,7 +16,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-
+    private LatLngBounds alicanteInicio = new LatLngBounds(
+            new LatLng(-44, 113), new LatLng(-10, 154));
+    private static final LatLng inicio = new LatLng(38.344256,-0.479812);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +47,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Sydney and move the camera
         LatLng alicante = new LatLng(38.346, -.4907);
         mMap.addMarker(new MarkerOptions().position(alicante).title("Alicante"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(alicante));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(inicio, 15));
 
         LatLng parkingPuerto = new LatLng(38.3427, -0.479308);
         mMap.addMarker(new MarkerOptions().position(parkingPuerto).title("Parking Puerto"));

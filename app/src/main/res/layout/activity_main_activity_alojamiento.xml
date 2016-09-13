@@ -35,7 +35,10 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="HOTEL MAYA"
                 android:id="@+id/textView27"
-                android:layout_marginBottom="10dp" />
+                android:layout_marginBottom="10dp"
+                android:linksClickable="false"
+                android:autoLink="web"
+                android:clickable="true" />
 
             <TextView
                 android:layout_width="wrap_content"
