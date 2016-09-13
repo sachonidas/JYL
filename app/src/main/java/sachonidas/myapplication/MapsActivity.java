@@ -1,19 +1,23 @@
 package sachonidas.myapplication;
 
+import android.content.pm.PackageManager;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-
+    private LatLngBounds alicanteInicio = new LatLngBounds(
+            new LatLng(-44, 113), new LatLng(-10, 154));
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,10 +42,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+
         // Add a marker in Sydney and move the camera
         LatLng alicante = new LatLng(38.346, -.4907);
         mMap.addMarker(new MarkerOptions().position(alicante).title("Alicante"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(alicante));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(alicanteInicio, 0));
 
         LatLng parkingPuerto = new LatLng(38.3427, -0.479308);
         mMap.addMarker(new MarkerOptions().position(parkingPuerto).title("Parking Puerto"));
@@ -70,11 +76,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng ereta = new LatLng(38.348365 , -0.481659);
         mMap.addMarker(new MarkerOptions().position(ereta).title("Restaurante La Ereta"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(ereta));
-
-
-
-
-
 
 
     }
