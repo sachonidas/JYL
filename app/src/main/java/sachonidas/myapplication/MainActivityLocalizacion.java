@@ -26,6 +26,8 @@ public class MainActivityLocalizacion extends AppCompatActivity {
         ImageButton btnVolver = (ImageButton) findViewById(R.id.imageButton);
 
         btnVolver.setImageResource(R.drawable.homeicon);
+
+
     }
 
     public void lanzaInicio(View view){
