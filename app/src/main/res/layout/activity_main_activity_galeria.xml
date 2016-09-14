@@ -9,12 +9,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="sachonidas.myapplication.MainActivityGaleria">
 
-    <Gallery
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/gallery1">
-        android:id="@id/gallery1"
-    </Gallery>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.PagerTitleStrip
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" />
+
+    </android.support.v4.view.ViewPager>
+
+
     <ImageButton
         android:layout_width="110px"
         android:layout_height="110px"
