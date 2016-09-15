@@ -100,22 +100,10 @@
                 android:text="*¿Asistiréis?"
                 android:id="@+id/textView41" />
 
-            <ToggleButton
+            <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aceptamos Encantados"
-                android:id="@+id/tglBtnAcpetar"
-                android:checked="true"
-                android:textOn="Aceptamos Encantados"
-                android:textOff="Aceptamos Encantados" />
-
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rechazamos con Pesar"
-                android:id="@+id/tglBtnRechazar"
-                android:textOff="Rechazamos con Pesar"
-                android:textOn="Rechazamos con Pesar" />
+                android:id="@+id/sp1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -124,54 +112,10 @@
                 android:text="*Numero total de asistentes"
                 android:id="@+id/textView42" />
 
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1"
-                    android:id="@+id/tglBtn1"
-                    android:textAlignment="center"
-                    android:textOff="1"
-                    android:textOn="1" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2"
-                    android:id="@+id/tglBtn2"
-                    android:textAlignment="center"
-                    android:textOn="2"
-                    android:textOff="2" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="3"
-                    android:id="@+id/tglBtn3"
-                    android:checked="false"
-                    android:textAlignment="center"
-                    android:textOff="3"
-                    android:textOn="3" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4"
-                    android:id="@+id/tglBtn4"
-                    android:textAlignment="center"
-                    android:textOff="4"
-                    android:textOn="4" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tglBtn5"
-                    android:textOff="5"
-                    android:textOn="5" />
-            </GridLayout>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -191,7 +135,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Enviar"
-                android:id="@+id/btnEnviar" />
+                android:id="@+id/btnEnviar"
+                android:onClick="envioFormulario" />
 
             <ImageButton
                 android:layout_width="110px"
