@@ -3,6 +3,7 @@ package sachonidas.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -64,51 +65,46 @@ public class MainActivityAsistencia extends AppCompatActivity {
         String botonAceptar = "";
         String botonRechazar = "";
 
-        Intent itSend = new Intent(Intent.ACTION_SEND);
-        itSend.setType("text/html");
-        itSend.putExtra(Intent.EXTRA_EMAIL, TO);
-        itSend.putExtra(Intent.EXTRA_CC, email);
-        itSend.putExtra(Intent.EXTRA_SUBJECT, nombre);
-
         String select1 = sp1.getSelectedItem().toString();
         String select2 = sp2.getSelectedItem().toString();
 
         if (select1 == "ACEPTAMOS ENCANTADOS"){
             botonAceptar = "ACEPTAMOS ENCANTADOS";
             Log.e("Leo", botonAceptar);
-            itSend.putExtra(Intent.EXTRA_TEXT, "Respuesta: "+botonAceptar);
         }else if (select1 == "RECHAZAMOS CON PESAR"){
             botonAceptar = "RECHAZAMOS CON PESAR";
             Log.e("Leo", botonRechazar);
-            itSend.putExtra(Intent.EXTRA_TEXT, "Respuesta: "+botonAceptar);
         }
 
 
         if (select2 == "1"){
             boton1 = "1";
             Log.e("Leo", boton1);
-            itSend.putExtra(Intent.EXTRA_TEXT, "Asistentes: "+boton1);
         }else if (select2 == "2"){
             boton1 = "2";
             Log.e("Leo", boton2);
-            itSend.putExtra(Intent.EXTRA_TEXT, "Asistentes: "+boton1);
         }else if (select2 == "3"){
             boton1 = "3";
             Log.e("Leo", boton3);
-            itSend.putExtra(Intent.EXTRA_TEXT, "Asistentes: "+boton1);
         }else if (select2 == "4"){
             boton1 = "4";
             Log.e("Leo", boton4);
-            itSend.putExtra(Intent.EXTRA_TEXT, "Asistentes: "+boton1);
         }else if (select2 == "5"){
             boton1 = "5";
             Log.e("Leo", boton2);
-            itSend.putExtra(Intent.EXTRA_TEXT, "Asistentes: "+boton1);
         }
 
-        String textoEmail = "Respuesta: "+botonAceptar +"\n Asistentes: "+boton1+"\n Comentario: "+comentarios ;
 
-        itSend.putExtra(Intent.EXTRA_TEXT, textoEmail);
+
+        Intent itSend = new Intent(Intent.ACTION_SEND);
+        itSend.setType("text/html");
+        itSend.putExtra(Intent.EXTRA_EMAIL, TO);
+        itSend.putExtra(Intent.EXTRA_CC, email);
+        itSend.putExtra(Intent.EXTRA_SUBJECT, nombre);
+
+        String textoEmail = "Respuesta: "+select1+"\n Asistentes: "+select2+"\n Comentario: "+comentarios ;
+
+                itSend.putExtra(Intent.EXTRA_TEXT, textoEmail);
         try {
             startActivity(itSend);
             finish();
