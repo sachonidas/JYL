@@ -13,6 +13,7 @@ public class MainActivityLocalizacion extends AppCompatActivity {
 
     private ImageView imgAyuntamiento, imgEreta;
     private Button btnMapa;
+    private ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class MainActivityLocalizacion extends AppCompatActivity {
         imgEreta = (ImageView)findViewById(R.id.imgEreta);
 
         btnMapa = (Button)findViewById(R.id.btnMapa);
+
+        btnMapa.setBackgroundResource(R.drawable.mapa);
 
         imgAyuntamiento.setImageResource(R.drawable.hallazul);
         imgEreta.setImageResource(R.drawable.eretaweb);

@@ -33,6 +33,7 @@ public class MainActivityAsistencia extends AppCompatActivity {
 
         btnVolver.setImageResource(R.drawable.homeicon);
 
+
         sp1 = (Spinner)findViewById(R.id.sp1);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.asistereis_array, android.R.layout.simple_spinner_item);

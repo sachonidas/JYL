@@ -150,7 +150,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:textAlignment="center"
-                android:layout_gravity="bottom" />
+                android:layout_gravity="bottom"
+                android:translationZ="200dp" />
 
         </LinearLayout>
     </ScrollView>

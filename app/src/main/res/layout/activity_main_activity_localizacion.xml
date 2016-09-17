@@ -102,6 +102,15 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imgEreta"
                 android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver Mapa"
+                android:id="@+id/btnMapa"
+                android:onClick="lanzaMapa"
+                android:textAlignment="center" />
+
             <ImageButton
                 android:layout_width="110px"
                 android:layout_height="110px"
@@ -114,13 +123,6 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ver Mapa"
-                android:id="@+id/btnMapa"
-                android:onClick="lanzaMapa"
-                android:textAlignment="center" />
         </LinearLayout>
     </ScrollView>
 

@@ -21,10 +21,8 @@ public class MainActivityLaura extends AppCompatActivity {
         setContentView(R.layout.activity_main_activity_laura);
 
         imgLaura = (ImageView)findViewById(R.id.imgLaura);
-        imgFinal = (ImageView)findViewById(R.id.imgFinal);
 
         imgLaura.setImageResource(R.drawable.lauraactivity);
-        imgFinal.setImageResource(R.drawable.laurafinal);
 
         btnVolver = (ImageButton)findViewById(R.id.imageButton);
 
