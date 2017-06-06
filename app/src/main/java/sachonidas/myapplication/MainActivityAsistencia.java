@@ -18,7 +18,7 @@ public class MainActivityAsistencia extends AppCompatActivity {
 
     private EditText etNombres, etMail, etComentarios;
     private Button btnEnviar;
-    String[] TO = {"lsachaabazan@gmail.com"};
+    String[] TO = {"email where you want the confirmation"};
     Spinner sp1, sp2;
 
 
